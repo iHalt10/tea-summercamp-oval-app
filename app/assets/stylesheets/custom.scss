@@ -1,0 +1,48 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.navbar{
+  background-color:#80CBC4;
+  position:fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  z-index:10;
+
+}
+@import url("mycss/users_new.css");
+
+.nabvar-brand{
+  font-family:Verdana;
+}
+
+/*設定，新規登録，ログイン，ログアウトのクラス*/
+.navbar-right{
+  font-family:游ゴシック;
+}
+
+span{
+  font-size:26px;
+  color:#ded;
+  letter-spacing:1px;
+}
+
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+.navbar-default {
+  border-style:none;
+  border-bottom:solid 1px #666;
+}
