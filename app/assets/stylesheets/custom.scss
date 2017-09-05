@@ -1,5 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  padding-top: 60px;
+}
+
 .navbar{
   background-color:#80CBC4;
   position:fixed;
@@ -9,13 +14,12 @@
   z-index:10;
 
 }
-@import url("mycss/users_new.css");
-
 .nabvar-brand{
   font-family:Verdana;
 }
 
 /*設定，新規登録，ログイン，ログアウトのクラス*/
+
 .navbar-right{
   font-family:游ゴシック;
 }
@@ -25,6 +29,7 @@ span{
   color:#ded;
   letter-spacing:1px;
 }
+
 
 
 #error_explanation {
