@@ -1,0 +1,39 @@
+.user-content {
+  border-radius:15px;
+  /*ホームに利用する際には透過をオフにする*/
+  background-color:rgb(41, 194, 194);
+  padding-top:5px;
+  margin:0 auto;
+  margin-top:100px;
+  text-align:center;
+  min-width: 250px;
+  max-width: 440px;
+  width:40%;
+  
+  color:#444;
+}
+
+
+.user-content h2{
+  font-weight:normal;
+  border-bottom:2px solid rgb(31, 184, 184);
+  padding-bottom: 10px;
+  font-family:游ゴシック;
+
+}
+
+.user-infos {
+  padding: 7px 5px 20px 5px;
+}
+
+.user-info {
+  float:left;
+  width:33%;
+  color:#767676;
+  font-family:メイリオ;
+  font-weight:500;
+}
+
+.clear {
+  clear : left;
+}

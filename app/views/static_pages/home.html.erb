@@ -1,2 +1,14 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% if logged_in? %>
+    <%= stylesheet_link_tag "mycss/user.css" , :media => "all"%>
+    <div class = "user-content">
+      <h2><%= current_user.name %></h2>
+      <div class = "user-infos">
+        <div class = "user-info">メンション<br>xxxx(数)</div>
+        <div class = "user-info">フォロー<br>xxx</div>
+        <div class = "user-info">フォロワー<br>xxxx</div>
+        <div class = "clear"> </div>
+      </div>
+    </div>
+<% else %>
+  Hello!!
+<% end %>
