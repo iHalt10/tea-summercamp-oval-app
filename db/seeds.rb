@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+News.find_or_create_by( sessionID: "0000000", title: 'Yahoo!ニュース・トピックス - 主要', link: 'https://news.yahoo.co.jp/', putDate: '2000-01-01 00:00:00')

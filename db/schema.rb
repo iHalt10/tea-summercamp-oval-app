@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170905020306) do
+ActiveRecord::Schema.define(version: 20170906041422) do
+
+  create_table "news", force: :cascade do |t|
+    t.string   "sessionID"
+    t.string   "title"
+    t.string   "link"
+    t.time     "putDate"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "news", ["sessionID"], name: "index_news_on_sessionID", unique: true
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
