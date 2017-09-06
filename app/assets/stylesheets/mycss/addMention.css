@@ -1,0 +1,55 @@
+
+
+.addMention {
+  background-color :#eff;
+  
+  position: fixed;
+  bottom: 10px;
+  z-index:100;
+  
+  height: 75px;
+  width: 620px;
+  border-radius:15px;
+  box-shadow: 1px 1px #dee;
+
+  
+}
+
+.input-mention {
+  resize: none;
+  height:55px;
+  width: 450px;
+  
+  border-radius:5px;
+  border:solid 1px #eee;
+  
+  position:absolute;
+  top:11px;
+  left:20px;
+  
+  font-family:游ゴシック;
+}
+
+
+.btn{
+  background-color:#eff;
+  transition:all 0.3s;
+  letter-spacing:1.5px;
+  border:3px outset #59b;
+  font-weight:bold;
+  color:#68c;
+  font-family:游ゴシック;
+  
+  position:absolute;
+  bottom:10px;
+  right:10px;
+}
+
+.btn:hover{
+  background-color:#8df;
+}
+
+
+.btn:active{
+  border-style:none;
+}

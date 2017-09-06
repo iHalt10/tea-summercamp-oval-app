@@ -1,0 +1,64 @@
+div{
+  transition:all 0.3s;
+}
+
+
+/*mentionの大枠*/
+.article-content{
+  border-radius:15px;
+  background-color:rgb(221, 244, 240);
+  margin:0 auto;
+  margin-top:100px;
+  padding: 1px;
+  width:600px;
+  color: #444;
+}
+
+
+
+.mention {
+    background-color:rgb(246, 252, 252);
+    margin: 19px;
+    border:2px solid #dfcfcf;
+}
+
+.userName{
+  font-family:メイリオ;
+  color:#000;
+  font-size:18px;
+  margin:7px 10px 7px 10px;
+}
+
+
+
+.mention-info {
+  padding: 0 10px;
+  font-family:游ゴシック;
+  font-size: 16px;
+}
+
+.mention-info:hover{
+  color:#66f;
+}
+
+.mention-bot {
+  height:20px;
+  position: relative;
+}
+
+.sorena {
+  position: absolute;
+  left:370px;
+}
+
+.mention-date {
+  position: absolute;
+  left : 480px;
+  
+}
+
+.fa-arrow-circle-up:hover{
+  cursor:pointer;
+  color:#37e;
+}
+

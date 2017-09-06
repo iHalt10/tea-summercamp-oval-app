@@ -20,7 +20,6 @@
 }
 
 /*ログインボタン*/
-
 #btn-margin {
   margin-bottom: 13px;
   font-family:游ゴシック;
@@ -30,10 +29,9 @@
 label{
   letter-spacing:1px;
   color:#555;
-  
 }
 
-.fa{
+form .fa{
   height:20px;
   width:20px;
 }

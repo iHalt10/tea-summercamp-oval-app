@@ -1,0 +1,85 @@
+/*bodyへbackground-colorによる色付け*/
+body{
+  background-color:#f0f5f6;
+}
+
+.home-content{
+  width: 950px;
+  margin:0 auto;
+  padding:15px;
+}
+
+.home-left {
+  float:left;
+}
+
+.user-content {
+  width:280px;
+  margin-top:50px;
+}
+
+.article-content {
+  margin-top:50px;
+}
+
+.news-right {
+  float:right;
+}
+
+
+.news-name {
+  position:fixed;
+  width:100%;
+  top:50px;
+}
+
+.form-content {
+  margin :0;
+  width:280px;
+}
+
+
+.signUpLink a{
+  transition:all 0.3s;
+  border:1px solid #888;
+  
+  border-radius:5px;
+  /*ホームに利用する際には透過をオフにする*/
+  background-color:rgb(41, 194, 194);
+  padding-top:5px;
+  padding-bottom:3px;
+  margin:0 auto;
+  margin-top:30px;
+  text-align:center;
+  width:140px;
+  color:#444;
+  font-family:游ゴシック;
+  letter-spacing:1px;
+  
+  display:block;
+  text-decoration: none;
+}
+
+.signUpLink a:hover{
+  color:#777;
+  background-color:rgb(41, 198, 198);
+
+}
+
+
+/*ページ最上部に移動するボタン*/
+#top-btn {
+  background-color:rgba(255,255,255,0.0);
+  height: 40px;
+  width: 37px;
+  border-radius:19px;
+  
+  position:fixed;
+  bottom:30px;
+  left:30px;
+}
+
+.fa-arrow-circle-up{
+  color:#04b;
+  opacity:0.6;
+}

@@ -1,0 +1,60 @@
+/*bodyへbackground-colorによる色付け*/
+body{
+  background-color:#f0f5f6;
+}
+
+.home-content{
+  width: 950px;
+  margin:0 auto;
+  padding:15px;
+}
+
+.user-content {
+  width:280px;
+  float:left;
+  margin-top:50px;
+}
+
+.article-content {
+  margin-top:50px;
+}
+
+.news-right {
+  float:right;
+}
+
+
+.news-name {
+  position:fixed;
+  width:100%;
+  top:50px;
+}
+
+@media(max-width:979px) {
+  .addMention {
+    right:10px;
+  }
+}
+
+/*ページ最上部に移動するボタン*/
+#top-btn {
+  background-color:rgba(255,255,255,0.0);
+  height: 40px;
+  width: 37px;
+  border-radius:19px;
+  
+  position:fixed;
+  bottom:30px;
+  left:30px;
+}
+
+.fa-arrow-circle-up{
+  color:#04b;
+  opacity:0.6;
+}
+
+@media(max-width:703px) {
+  #top-btn {
+    bottom:95px;
+  }
+}

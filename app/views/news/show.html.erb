@@ -1,0 +1,109 @@
+<%= stylesheet_link_tag "mycss/news.css" , :media => "all"%>
+<%= stylesheet_link_tag "mycss/newsName.css" , :media => "all"%>
+
+<div class = "news-name">
+    <a href= "<%= @news.link %>" target=”_blank”>
+      <div class ="news-color"><%= @news.title %>  <small>クリックで元記事へ</small></div>
+    </a>
+</div>
+<% if logged_in? %>
+    <%= stylesheet_link_tag "mycss/user.css" , :media => "all"%>
+    <%= stylesheet_link_tag "mycss/newspage.css" , :media => "all"%>
+    <%= stylesheet_link_tag "mycss/addMention.css" , :media => "all"%>
+    <div class = "home-content">
+    <%= render 'users/user_info' %>
+      <div class = "news-right">
+      
+        <div class = "article-content">
+          <div class = "articles">
+            <!--以下個別記事 forで回す？-->
+            <div class ="mention">
+              <div class = "userName">ユーザ名</div>
+              <div class = "mention-info">スナネコ©かわいいよぉぉぉぉ！ああああああああああああああああああああああ</div>
+              <div class = "mention-bot">
+                <div class = "sorena"><i class="fa fa-hand-o-right" aria-hidden="true"></i>それな！ xxx</div>
+                <div class = "mention-date">hh時間前</div>
+              </div>
+            </div>
+            
+            <div class ="mention">
+              <div class = "userName">ユーザ名</div>
+              <div class = "mention-info">公式発表まで待とう？</div>
+              <div class = "mention-bot">
+                <div class = "sorena"><i class="fa fa-hand-o-right" aria-hidden="true"></i>それな！ xxx</div>
+                <div class = "mention-date">hh時間前</div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+        
+        <div class = "addMention">
+          <form>
+            <textarea class = "input-mention"  placeholder ="記事への反応をMention!"></textarea>
+            <button type = "submit" class = "btn btn-default" >
+            <i class="fa fa-commenting" aria-hidden="true"></i>
+            Mention!</button>
+          </form>
+        </div>
+      
+      </div>
+
+      <div id = "top-btn">
+        <i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i>
+      </div>
+
+      
+    <div class = "clear" > </div>
+      
+    </div>
+
+<% else %>
+
+
+    <%= stylesheet_link_tag "mycss/logIn.css" , :media => "all"%>
+    <%= stylesheet_link_tag "mycss/newspageNotLogin.css" , :media => "all"%>
+    
+    <div class = "home-content">
+      <%= render 'users/user_login' %>
+      <div class = "news-right">
+        <div class = "article-content">
+          <div class = "articles">
+            <!--以下個別記事 forで回す？-->
+            <div class ="mention">
+              <div class = "userName">ユーザ名</div>
+              <div class = "mention-info">スナネコ©かわいいよぉぉぉぉ！ああああああああああああああああああああああ</div>
+              <div class = "mention-bot">
+                <div class = "sorena"><i class="fa fa-hand-o-right" aria-hidden="true"></i>それな！ xxx</div>
+                <div class = "mention-date">hh時間前</div>
+              </div>
+            </div>
+            
+            <div class ="mention">
+              <div class = "userName">ユーザ名</div>
+              <div class = "mention-info">公式発表まで待とう？</div>
+              <div class = "mention-bot">
+                <div class = "sorena"><i class="fa fa-hand-o-right" aria-hidden="true"></i>それな！ xxx</div>
+                <div class = "mention-date">hh時間前</div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      
+      </div>
+
+      
+      <div id = "top-btn">
+        <i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i>
+      </div>
+
+      
+    <div class = "clear" > </div>
+      
+    </div>
+
+
+<% end %>
+<!--pageTop.js-->
+<!--<script src="pageTop.js"></script>-->

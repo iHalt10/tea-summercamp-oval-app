@@ -1,0 +1,33 @@
+.news-color{
+  transition:all 0.3s;
+}
+
+
+.news-name{
+  height:50px;
+  line-height:50px;
+  background-color:#ced;
+  font-family:游ゴシック;
+  font-size:18px;
+  
+  padding-right: 15px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.news-color {
+  color :#777;
+}
+
+.news-name a{
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+
+
+.news-color:hover{
+  color:#333;
+}
+

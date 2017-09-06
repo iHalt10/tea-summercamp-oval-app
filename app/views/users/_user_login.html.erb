@@ -1,0 +1,24 @@
+<div class = "home-left">
+  <div class = "user-content">
+      <%= form_for(:session, url: login_path, :html => {:class => "form-content"}) do |f| %>
+        <div class = "form-group">
+          <!--E-mail icon-->
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'form-control', :placeholder => "Email" %>
+        </div>
+        <div class="form-group">
+          <!--Key icon-->
+          <i class="fa fa-key" aria-hidden="true"></i>
+          <%= f.label :password,"Password" %>
+          <%= f.password_field :password, class: 'form-control' , :placeholder => "Password" %>
+        </div>
+        <%= f.submit "ログイン", class: "btn btn-default", id: "btn-margin" %>
+      <% end %>
+  </div>
+  <div class = "signUpLink">
+    <%= link_to signup_path do%>
+      <i class="fa fa-user-o" aria-hidden="true"></i>Sign up now!
+    <% end %>
+  </div>
+</div>
