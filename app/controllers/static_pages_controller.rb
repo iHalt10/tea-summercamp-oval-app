@@ -23,5 +23,7 @@ class StaticPagesController < ApplicationController
       end
       @news_top.update(putDate: rss.channel.pubDate)
     end
+    
+    @news = News.all
   end
 end
