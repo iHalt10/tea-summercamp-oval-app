@@ -17,36 +17,48 @@
         <div class = "article-content">
           <div class = "articles">
             <!--以下個別記事 forで回す？-->
-            <div class ="mention">
-              <div class = "userName">ユーザ名</div>
-              <div class = "mention-info">スナネコ©かわいいよぉぉぉぉ！ああああああああああああああああああああああ</div>
-              <div class = "mention-bot">
-                <div class = "sorena"><i class="fa fa-hand-o-right" aria-hidden="true"></i>それな！ xxx</div>
-                <div class = "mention-date">hh時間前</div>
-              </div>
-            </div>
             
-            <div class ="mention">
-              <div class = "userName">ユーザ名</div>
-              <div class = "mention-info">公式発表まで待とう？</div>
-              <div class = "mention-bot">
-                <div class = "sorena"><i class="fa fa-hand-o-right" aria-hidden="true"></i>それな！ xxx</div>
-                <div class = "mention-date">hh時間前</div>
-              </div>
-            </div>
-    
+            
+              <% (0..@user.count-1).each do |i| %>
+                <div class ="mention">
+                  <div class = "userName"><%= @user[i].name %></div>
+                  <div class = "mention-info"><%= @mention[i].content %></div>
+                  <div class = "mention-bot">
+                  <a class="sorena-btn" href="#">
+                    <div class = "sorena"><i class="fa fa-hand-o-right" aria-hidden="true"></i>それな！</div>
+                  </a>
+                <div class = "mention-date"><%= @mention[i].created_at.strftime("%H:%M:%S") %></div>
+                  </div>
+                </div>
+              <% end %>
           </div>
         </div>
-        
+
+
+
+
+
+
+
         <div class = "addMention">
-          <form>
-            <textarea class = "input-mention"  placeholder ="記事への反応をMention!"></textarea>
-            <button type = "submit" class = "btn btn-default" >
-            <i class="fa fa-commenting" aria-hidden="true"></i>
-            Mention!</button>
-          </form>
-        </div>
-      
+          <!--form_for(url: mentioncreate_path, :html => {:class => "form-content"})-->
+    
+    
+    
+    <%= form_for(@mention_current_user) do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
+        <%= f.text_area :content, class: 'input-mention', placeholder: "記事への反応をMention!" %>
+        <%= f.text_area :news_id, class: 'input-display' %>
+        <%= f.submit "Post", class: "btn btn-primary"  %>
+    <% end %>
+
+
+
+
+
+
+
+
       </div>
 
       <div id = "top-btn">
@@ -70,24 +82,18 @@
         <div class = "article-content">
           <div class = "articles">
             <!--以下個別記事 forで回す？-->
-            <div class ="mention">
-              <div class = "userName">ユーザ名</div>
-              <div class = "mention-info">スナネコ©かわいいよぉぉぉぉ！ああああああああああああああああああああああ</div>
-              <div class = "mention-bot">
-                <div class = "sorena"><i class="fa fa-hand-o-right" aria-hidden="true"></i>それな！ xxx</div>
-                <div class = "mention-date">hh時間前</div>
-              </div>
-            </div>
-            
-            <div class ="mention">
-              <div class = "userName">ユーザ名</div>
-              <div class = "mention-info">公式発表まで待とう？</div>
-              <div class = "mention-bot">
-                <div class = "sorena"><i class="fa fa-hand-o-right" aria-hidden="true"></i>それな！ xxx</div>
-                <div class = "mention-date">hh時間前</div>
-              </div>
-            </div>
-    
+              <% (0..@user.count-1).each do |i| %>
+                <div class ="mention">
+                  <div class = "userName"><%= @user[i].name %></div>
+                  <div class = "mention-info"><%= @mention[i].content %></div>
+                  <div class = "mention-bot">
+                    <a class="sorena-btn" href="#">
+                      <div class = "sorena"><i class="fa fa-hand-o-right" aria-hidden="true"></i>それな！</div>
+                    </a>
+                    <div class = "mention-date"><%= @mention[i].created_at.in_time_zone('Tokyo').strftime("%H:%M:%S") %></div>
+                  </div>
+                </div>
+              <% end %>
           </div>
         </div>
       

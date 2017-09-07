@@ -19,3 +19,42 @@ body{
   float:right;
   margin-top:70px;
 }
+
+
+/*それな！ボタン*/
+.sorena-btn{
+  font-family:メイリオ;
+  font-weight:bold;
+}
+
+.sorena-btn:hover{
+  color:#ed5a33;
+}
+
+.sorena-btn:active{
+  color:#ed5a33;
+  font-size:120%;
+}
+
+
+/*ページ最上部に移動するボタン*/
+#top-btn {
+  background-color:rgba(255,255,255,0.0);
+  height: 40px;
+  width: 37px;
+  border-radius:19px;
+  
+  position:fixed;
+  bottom:30px;
+  left:30px;
+}
+
+.fa-arrow-circle-up{
+  color:#04b;
+  opacity:0.6;
+}
+
+.fa-arrow-circle-up:hover{
+  cursor:pointer;
+  color:#37e;
+}

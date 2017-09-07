@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Newsal</title>
+    <%= stylesheet_link_tag "application", media: 'all' %>
+    <%= stylesheet_link_tag "mycss/whatis.css" , :media => "all"%>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <div class = "back-image">
+        <div class = "what-content">
+          <div class = "what-wrapper">
+            <div class = "whats">
+              <h1 class="whats-title">WHAT IS the <span>N</span>EWSAL? <i class="fa fa-newspaper-o" aria-hidden="true"></i></h1>
+              <p class="what-is what-one">ニュース特化型SNS ”<span>N</span>EWSAL（ニューサル）”へようこそ！</p>
+              <p class="what-is">NEWSALはあなたが世間のニュースに対して抱いている主張を，<br>他ユーザーに発信（Mention!）することができます。</p>
+              <p class="what-is">また，あなたは他人の主張について異論を唱えることはもちろん，賛同することも可能です！</p>
+              <p class="what-is">そして，<span>N</span>EWSALは情報源の信頼性を重要視しており，<br>信憑性のある情報を「Yahoo！ニュース」から取得しています。</p>
+              <p class="what-is">これにより，ユーザー同士が正確な情報の基で生産性のある主張を可能としています。</p>
+              <p class="what-is"> もうあなたは，フェイクニュースの上でナンセンスな主張を繰り広げることはありません。</p>
+              <p class="what-is"> さあ，あなたの素晴らしい主張を広大なネットの海に向かって叫んでみましょう！</p>
+              <h3>―Throw SNS you've had away, and become a Critical Arguer.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

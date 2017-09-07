@@ -52,6 +52,75 @@ body{
 .signUpLink a:hover{
   color:#777;
   background-color:rgb(41, 198, 198);
-
 }
 
+/*それな！ボタン（未ログイン時）*/
+.sorena-btn{
+  font-family:メイリオ;
+  font-weight:bold;
+}
+
+.sorena-btn:hover{
+  color:#ed5a33;
+  cursor:default;
+}
+
+
+.link-whatis a{
+  transition:all 0.3s;
+  border:1px solid #888;
+  
+  color:#333;
+  
+  border-radius:5px;
+  
+  background-image:url(/assets/newspaper.jpg);
+  background-size: cover;
+
+  
+  margin:0 auto;
+  margin-top:30px;
+  
+  text-align:center;
+  line-height:80px;
+  font-family:Georgia;
+  font-size:17px;
+  
+  height:80px;
+  width:220px;
+  letter-spacing:1px;
+  
+  display:block;
+  text-decoration: none;
+  
+  position: relative;
+}
+
+.link-whatis a:hover{
+  color:#47c;
+  background-color:rgba(41, 198, 198, 0.8);
+}
+
+
+
+/*ページ最上部に移動するボタン*/
+#top-btn {
+  background-color:rgba(255,255,255,0.0);
+  height: 40px;
+  width: 37px;
+  border-radius:19px;
+  
+  position:fixed;
+  bottom:30px;
+  left:30px;
+}
+
+.fa-arrow-circle-up{
+  color:#04b;
+  opacity:0.6;
+}
+
+.fa-arrow-circle-up:hover{
+  cursor:pointer;
+  color:#37e;
+}

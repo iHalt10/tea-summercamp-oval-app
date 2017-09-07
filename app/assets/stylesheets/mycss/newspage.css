@@ -58,3 +58,47 @@ body{
     bottom:95px;
   }
 }
+
+
+/*それな！ボタン*/
+.sorena-btn{
+  font-family:メイリオ;
+  font-weight:bold;
+}
+
+.sorena-btn:hover{
+  color:#ed5a33;
+}
+
+.sorena-btn:active{
+  color:#ed5a33;
+  font-size:120%;
+}
+
+
+/*投稿者下のボーダー*/
+.userName{
+  color:#666;;
+  border-bottom:1px solid #ddd;
+}
+
+.input-display {
+  display:none;
+}
+
+
+
+/*それな！ボタン*/
+.sorena-btn{
+  font-family:メイリオ;
+  font-weight:bold;
+}
+
+.sorena-btn:hover{
+  color:#ed5a33;
+}
+
+.sorena-btn:active{
+  color:#ed5a33;
+  font-size:120%;
+}

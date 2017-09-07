@@ -83,3 +83,59 @@ body{
   color:#04b;
   opacity:0.6;
 }
+
+
+/*それな！ボタン（未ログイン時）*/
+.sorena-btn{
+  font-family:メイリオ;
+  font-weight:bold;
+}
+
+.sorena-btn:hover{
+  color:#ed5a33;
+  cursor:default;
+}
+
+/*投稿者下のボーダー*/
+.userName{
+  color:#666;
+  border-bottom:1px solid #ddd;
+}
+
+
+.link-whatis a{
+  transition:all 0.3s;
+  border:1px solid #888;
+  
+  color:#333;
+  
+  border-radius:5px;
+  
+  background-image:url(/assets/newspaper.jpg);
+  background-size: cover;
+
+  
+  margin:0 auto;
+  margin-top:30px;
+  
+  text-align:center;
+  line-height:80px;
+  font-family:Georgia;
+  font-size:17px;
+  
+  height:80px;
+  width:220px;
+  letter-spacing:1px;
+  
+  display:block;
+  text-decoration: none;
+  
+  position: relative;
+}
+
+.link-whatis a:hover{
+  color:#47c;
+  background-color:rgba(41, 198, 198, 0.8);
+}
+
+

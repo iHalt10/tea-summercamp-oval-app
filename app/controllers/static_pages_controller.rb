@@ -23,7 +23,24 @@ class StaticPagesController < ApplicationController
       end
       @news_top.update(putDate: rss.channel.pubDate)
     end
-    
+    @news_top.id = -1
     @news = News.all
+    @mens = []
+    # @onemwn = Mention.find_by(news_id: 3)
+    @news.each do |new|
+      @onemen = Mention.find_by(news_id: new.id)
+      if @onemen.nil?
+        @mens.push(@news_top)
+      else
+        @mens.push(@onemwn)
+      end
+    end
+    
+    def whatis
+      
+    end
+    
+    # binding.pry
+    # binding.pry
   end
 end

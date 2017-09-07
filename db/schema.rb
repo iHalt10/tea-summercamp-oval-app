@@ -11,19 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170906065523) do
+ActiveRecord::Schema.define(version: 20170906164402) do
 
   create_table "mentions", force: :cascade do |t|
-    t.integer  "newsID_id"
-    t.integer  "userID_id"
+    t.integer  "news_id"
+    t.integer  "user_id"
     t.string   "content"
     t.integer  "sorena"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_index "mentions", ["newsID_id"], name: "index_mentions_on_newsID_id"
-  add_index "mentions", ["userID_id"], name: "index_mentions_on_userID_id"
+  add_index "mentions", ["news_id"], name: "index_mentions_on_news_id"
+  add_index "mentions", ["user_id"], name: "index_mentions_on_user_id"
 
   create_table "news", force: :cascade do |t|
     t.string   "sessionID"

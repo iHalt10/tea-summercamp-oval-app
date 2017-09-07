@@ -6,5 +6,10 @@ class User < ActiveRecord::Base
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
   has_secure_password
-  has_secure_password
+  
+  has_many :mentions
+  has_many :user_own_news_relationships, class_name:  "Mention",
+                                     foreign_key: "user_id",
+                                     dependent:   :destroy
+  has_many :user_own_news, through: :user_own_news_relationships, source: :news
 end

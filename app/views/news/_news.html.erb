@@ -5,24 +5,16 @@
     <div class ="article">
       
       <%= link_to new.title ,new ,class: "article-name" %>
-      <div class = "article-date"><%= new.putDate %></div>
+      <div class = "article-date"><%= new.putDate.strftime("%H:%M:%S") %></div>
       <div class = "article-right">
-        <div class = "article-mention">
-          <i class="fa fa-comment-o" aria-hidden="true"></i>
-          menxxxxx</div>
-        <div class = "article-rt">
-          <i class="fa fa-retweet" aria-hidden="true"></i>
-          rtxxx</div>
+         <div class = "article-mention">
+            <p class = "mentiom-chara"><i class="fa fa-comments-o" aria-hidden="true"></i>mention</p>
+            <p class = "mention-figure"><%= Mention.where(news_id: new.id).count %></p>
+            
+    
+         </div>
       </div>
     </div>
-    <!--以下ユーザ反応-->
-    <div class ="mention">
-      <div class = "userName">ユーザ名</div>
-      <div class = "mention-info">スナネコ©かわいいよぉぉぉぉ！ああああああああああああああああああああああ</div>
-      <div class = "mention-bot">
-        <div class = "sorena">m9 xxx</div>
-        <div class = "mention-date">hh時間前</div>
-      </div>
-    </div>
+
   </div>
 </div>

@@ -1,0 +1,108 @@
+/*bodyへbackground-colorによる色付け*/
+body{
+  background-color:#444;
+  background-image:url(/assets/newspaper.jpg);
+   /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+   
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+  
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+   
+   
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+  padding-top:50px;
+}
+
+.back-image {
+  background-color:rgba(0, 0, 0, 0.7);
+  top: -10px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.what-content {
+  border-radius:15px;
+  width:800px;
+  margin: 0 auto;
+  padding:15px;
+  text-align:center;
+}
+
+/*設定項目のラッパー*/
+.what-wrapper {
+  
+  margin-top:100px;
+
+  height:1080px;
+  padding:10px;
+}
+
+/*WHAT IS the NEWSAL?*/
+.whats h1 {
+  color:white;
+  opacity:0.7;
+  font-family:Georgia;
+  font-size:55px;
+  border-bottom:2px solid #aaa;
+  letter-spacing:0px;
+}
+
+/*be a Criticl Arguer*/
+.whats h3{
+  padding-top:20px;
+  color:#ddd;
+  font-weight:normal;
+  font-family:Garamond;
+}
+
+.whats-title span{
+  color:#c33;
+  font-size:70px;
+}
+
+
+/*p要素，本文*/
+.what-is{
+  color:#eee;
+  opacity:0.95;
+  margin:10px;
+  line-height:32px;
+  font-family:游明朝;
+  font-size:15px;
+}
+
+.what-is span{
+  color:#c55;
+  font-weight:bold;
+}
+.what-one {
+  padding-top:15px;
+}
+
+@media all and (max-width: 700px) {
+  .what-content {
+    text-align:left;
+    padding:5px;
+    width:100%;
+  }
+  
+  .whats h1 {
+    font-size:35px;
+    padding-left:10px;
+  }
+  
+  .whats-title span {
+    color:#c33;
+    font-size:40px;
+  }
+  
+  .what-is {
+    font-size:13px;
+    line-height:27px;
+  }
+}
